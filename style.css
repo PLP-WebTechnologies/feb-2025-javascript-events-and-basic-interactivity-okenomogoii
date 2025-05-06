@@ -1,0 +1,127 @@
+body {
+  font-family: sans-serif;
+  margin: 2rem;
+  line-height: 1.6;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+button {
+  margin: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #007BFF;
+  color: white;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#hoverBox, #secretBox {
+  width: 200px;
+  height: 50px;
+  background-color: lightblue;
+  margin: 1rem 0;
+  text-align: center;
+  line-height: 50px;
+}
+
+#hoverBox:hover {
+  background-color: #87CEEB;
+  transform: scale(1.05);
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.gallery img {
+  width: 200px;
+  height: auto;
+  display: block;
+}
+
+.gallery img:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.tabs {
+  margin-top: 1rem;
+}
+
+.tabs button.active {
+  background-color: #007BFF;
+  color: white;
+  border-bottom: 2px solid #0056b3;
+}
+
+#tabContent {
+  padding: 0.5rem;
+  background: #f0f0f0;
+  border: 1px solid #ccc;
+  margin-top: 0.5rem;
+  transition: all 0.3s ease;
+  opacity: 1;
+}
+
+input {
+  display: block;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+}
+
+input:focus {
+  border-color: #007BFF;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+#feedback {
+  color: crimson;
+  font-size: 0.9rem;
+}
+
+.accordion-content {
+  display: none;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  margin-top: 0.5rem;
+  background: #e0e0e0;
+}
+
+.accordion-content.active {
+  display: block;
+}
+
+.accordion-toggle {
+  background-color: #ddd;
+  border: none;
+}
+
+.accordion-toggle:hover {
+  background-color: #ccc;
+  cursor: pointer;
+}
+
+.dark-mode {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+.dark-mode button {
+  background-color: #333;
+  color: #f0f0f0;
+}
+
+.dark-mode button:hover {
+  background-color: #444;
+}
+
+.dark-mode .accordion-content {
+  background: #333;
+  color: #f0f0f0;
+}
+
+.dark-mode input {
+  background-color: #222;
+  color: #f0f0f0;
+  border: 1px solid #444;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JS Event Assignment</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Interactive JS Playground</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>Event Handling</h2>
+      <button id="clickBtn">Click Me!</button>
+      <div id="hoverBox">Hover Over Me</div>
+      <input type="text" id="keyInput" placeholder="Type something..." />
+      <div id="secretBox">Double-click me </div>
+    </section>
+
+    <section>
+      <h2> Interactive Elements</h2>
+      <button id="colorBtn">Change My Color</button>
+      <div class="gallery">
+        <img id="galleryImage" src="https://via.placeholder.com/200" alt="Gallery Image">
+        <button id="prevBtn">⬅️</button>
+        <button id="nextBtn">➡️</button>
+      </div>
+
+      <div class="tabs">
+        <button class="tabBtn" data-tab="1">Tab 1</button>
+        <button class="tabBtn" data-tab="2">Tab 2</button>
+        <div id="tabContent">Tab 1 Content</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Form Validation</h2>
+      <form id="signupForm">
+        <input type="text" id="name" placeholder="Name" required />
+        <input type="email" id="email" placeholder="Email" required />
+        <input type="password" id="password" placeholder="Password (min 8 chars)" required />
+        <span id="feedback"></span>
+        <button type="submit">Sign Up</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p> Built for fun and learning 2025</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
